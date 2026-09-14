@@ -1,0 +1,55 @@
+public class Main {
+    public static void main(String[] args) {
+
+        Circle c1 = new Circle();
+        System.out.println(c1.getArea());
+
+        Cat glitch = new Cat();
+        glitch.name = "Glitch McPixel Tomesh";
+        glitch.age = 15;
+        glitch.sex = 'M';
+        glitch.weight = 13.0;
+        glitch.color = "Tuxedo";
+        glitch.breed = "Domestic Short Hair";
+
+        Cat haku = new Cat();
+        haku.name = "Haku Gihbli Tomesh";
+        haku.age = 6;
+        haku.sex = 'M';
+        haku.weight = 8.0;
+        haku.color = "Tuxedo";
+        haku.breed = "Domestic Short Hair";
+
+        System.out.println("Name: " + glitch.name + " age: " + glitch.age + " sex: " + glitch.sex 
+            + " weight: " + glitch.weight + " color: " + glitch.color + " breed: " + glitch.breed);
+        
+
+
+
+        // String cat1Name = "Glitch";
+        // String cat2Name = "Haku";
+        // String cat3Name = "Genki";
+        // String cat4Name = "Susu";
+        // String cat5Name = "Pippin";
+
+        // int cat1Age = 15;
+        // int cat2Age = 6;
+        // int cat3Age = 3;
+        // int cat4Age = 2;
+        // int cat5Age = 1;
+
+        // double cat1Weight = 12.0;
+        // double cat2Weight = 9.0;
+        // double cat3Weight = 12.0;
+        // double cat4Weight = 6.0;
+        // double cat5Weight = 5.0; 
+
+        // System.out.println(cat1Name + " : Age: " + cat1Age + " Weight: " + cat1Weight);
+        // System.out.println(cat2Name + " : Age: " + cat2Age + " Weight: " + cat2Weight);
+        // System.out.println(cat3Name + " : Age: " + cat3Age + " Weight: " + cat3Weight);
+        // System.out.println(cat4Name + " : Age: " + cat4Age + " Weight: " + cat4Weight);
+        // System.out.println(cat5Name + " : Age: " + cat5Age + " Weight: " + cat5Weight);
+
+
+    }
+}
