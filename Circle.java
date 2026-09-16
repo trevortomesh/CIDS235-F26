@@ -4,4 +4,8 @@ public class Circle {
     double getArea(){
         return Math.PI * radius * radius;
     }
+
+    double getPerimeter(){
+        return 2 * Math.PI * radius;
+    }
 }

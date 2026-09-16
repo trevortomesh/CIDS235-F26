@@ -5,5 +5,9 @@ public class Cat {
     String breed;
     int age;
     double weight;
+
+    void meow(){
+        System.out.println(name + " says meow!");
+    }
 }
 

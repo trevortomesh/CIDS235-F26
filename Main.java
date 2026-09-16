@@ -2,15 +2,26 @@ public class Main {
     public static void main(String[] args) {
 
         Circle c1 = new Circle();
+        System.out.println("default radius is: " + c1.radius);
+        c1.radius = 10;
+        System.out.println("radius is now " + c1.radius);
         System.out.println(c1.getArea());
+        System.out.println(c1.getPerimeter());
 
-        Cat glitch = new Cat();
-        glitch.name = "Glitch McPixel Tomesh";
-        glitch.age = 15;
-        glitch.sex = 'M';
-        glitch.weight = 13.0;
-        glitch.color = "Tuxedo";
-        glitch.breed = "Domestic Short Hair";
+        Circle roundy = new Circle();
+        roundy.radius = 3.0;
+        System.out.println("roundy has a radius of : " + roundy.radius);
+        System.out.println("c1 still has a radius of : " + c1.radius);
+
+
+         Cat glitch = new Cat();
+         glitch.name = "Glitch McPixel Tomesh";
+         glitch.age = 15;
+         glitch.sex = 'M';
+         glitch.weight = 13.0;
+         glitch.color = "Tuxedo";
+         glitch.breed = "Domestic Short Hair";
+         glitch.meow();
 
         Cat haku = new Cat();
         haku.name = "Haku Gihbli Tomesh";
@@ -20,8 +31,8 @@ public class Main {
         haku.color = "Tuxedo";
         haku.breed = "Domestic Short Hair";
 
-        System.out.println("Name: " + glitch.name + " age: " + glitch.age + " sex: " + glitch.sex 
-            + " weight: " + glitch.weight + " color: " + glitch.color + " breed: " + glitch.breed);
+        // System.out.println("Name: " + glitch.name + " age: " + glitch.age + " sex: " + glitch.sex 
+        //     + " weight: " + glitch.weight + " color: " + glitch.color + " breed: " + glitch.breed);
         
 
 
