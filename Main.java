@@ -1,8 +1,13 @@
 public class Main {
     public static void main(String[] args) {
 
-        Circle c1 = new Circle();
-        System.out.println("default radius is: " + c1.radius);
+        Table table1 = new Table(3.0);
+        //table1.height = 3.0;
+        System.out.println(table1.height);
+
+
+        Circle c1 = new Circle(1.5);
+        System.out.println("c1 radius is: " + c1.radius);
         c1.radius = 10;
         System.out.println("radius is now " + c1.radius);
         System.out.println(c1.getArea());
@@ -13,15 +18,12 @@ public class Main {
         System.out.println("roundy has a radius of : " + roundy.radius);
         System.out.println("c1 still has a radius of : " + c1.radius);
 
+        Cat newcat = new Cat();
+        System.out.println(newcat.name);
 
-         Cat glitch = new Cat();
-         glitch.name = "Glitch McPixel Tomesh";
-         glitch.age = 15;
-         glitch.sex = 'M';
-         glitch.weight = 13.0;
-         glitch.color = "Tuxedo";
-         glitch.breed = "Domestic Short Hair";
-         glitch.meow();
+        Cat glitch = new Cat("Glitch McPixel Tomesh", 'M', "Orange",
+            "DSH", 15, 12.0);
+        glitch.meow();
 
         Cat haku = new Cat();
         haku.name = "Haku Gihbli Tomesh";
