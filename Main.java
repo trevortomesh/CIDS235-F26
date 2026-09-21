@@ -6,7 +6,10 @@ public class Main {
         System.out.println(table1.height);
 
 
-        Circle c1 = new Circle(1.5);
+        Circle c1;
+        c1 = new Circle(1.5);
+        System.out.println(c1);
+        
         System.out.println("c1 radius is: " + c1.radius);
         c1.radius = 10;
         System.out.println("radius is now " + c1.radius);
