@@ -1,7 +1,7 @@
 public class Table {
 
     double height; 
-
+    Circle tableCircle = new Circle(3.0);
     Table(){
         height = 4.0; // default height of table
     }
@@ -10,5 +10,8 @@ public class Table {
         height = newHeight;
     }
 
+    public static void flip(){
+        System.out.println("Cleansing the temple!");
+    }
 
 }
