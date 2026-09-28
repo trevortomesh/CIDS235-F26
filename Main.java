@@ -1,6 +1,16 @@
 public class Main {
     public static void main(String[] args) {
 
+
+        Circle circle1 = new Circle();
+        Circle circle2 = new Circle(5);
+
+        System.out.println(circle1.getArea());
+        System.out.println(Circle.getNumberOfObjects());
+       // System.out.println(Circle.getNumberOfObjects());
+
+
+
         // int i;
         // int j;
         // i = 1;
@@ -13,24 +23,24 @@ public class Main {
         // System.out.println("j is " + j);
 
 
-        Circle c1;
-        Circle c2;
-        Circle c3;
-        c1 = new Circle();
-        c2 = new Circle();
-        c3 = c1;
+        // Circle c1;
+        // Circle c2;
+        // Circle c3;
+        // c1 = new Circle();
+        // c2 = new Circle();
+        // c3 = c1;
         
-        System.out.println("c1 address: " + c1 + " c1 radius: " + c1.radius);
-        System.out.println("c2 address: " + c2 + " c2 radius: " + c2.radius);
-        System.out.println("c3 address: " + c3 + " c3 radius: " + c3.radius);
+        // System.out.println("c1 address: " + c1 + " c1 radius: " + c1.radius);
+        // System.out.println("c2 address: " + c2 + " c2 radius: " + c2.radius);
+        // System.out.println("c3 address: " + c3 + " c3 radius: " + c3.radius);
 
-        c1 = c2;
-        c3 = c1;
-        c2.radius = 20;
+        // c1 = c2;
+        // c3 = c1;
+        // c2.radius = 20;
 
-        System.out.println("c1 address is: " + c1 + " c1 radius is now: " + c1.radius);
-        System.out.println("c2 address is: " + c2 + " c2 radius is now: " + c2.radius);
-        System.out.println("c3 address is: " + c3 + " c3 radius is now: " + c3.radius);
+        // System.out.println("c1 address is: " + c1 + " c1 radius is now: " + c1.radius);
+        // System.out.println("c2 address is: " + c2 + " c2 radius is now: " + c2.radius);
+        // System.out.println("c3 address is: " + c3 + " c3 radius is now: " + c3.radius);
 
 
         //System.out.println(c);
