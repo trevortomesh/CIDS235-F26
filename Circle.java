@@ -1,7 +1,7 @@
 public class Circle {
-    double radius;
+    private double radius;
 
-    static int numberOfObjects = 0;
+    private static int numberOfObjects = 0;
 
     Circle(){
         radius = 1.0;
@@ -22,7 +22,16 @@ public class Circle {
         return 2 * Math.PI * radius;
     }
 
+    double getRadius(){
+        return radius;
+    }
+
+    void setRadius(double newRadius){
+        radius = newRadius;
+    }
+
     static int getNumberOfObjects(){
         return numberOfObjects;
     }
+
 }
