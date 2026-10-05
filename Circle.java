@@ -3,34 +3,34 @@ public class Circle {
 
     private static int numberOfObjects = 0;
 
-    Circle(){
+    public Circle(){
         radius = 1.0;
         numberOfObjects++;
     }
     
-    Circle(double newRadius){
+    public Circle(double newRadius){
         radius = newRadius;
         numberOfObjects++;
     }
 
-    double getArea(){
+    public double getArea(){
         System.out.println("We have " + Circle.numberOfObjects + " circles!");
         return Math.PI * radius * radius;
     }
 
-    double getPerimeter(){
+    public double getPerimeter(){
         return 2 * Math.PI * radius;
     }
 
-    double getRadius(){
+    public double getRadius(){
         return radius;
     }
 
-    void setRadius(double newRadius){
+    public void setRadius(double newRadius){
         radius = newRadius;
     }
 
-    static int getNumberOfObjects(){
+    public static int getNumberOfObjects(){
         return numberOfObjects;
     }
 

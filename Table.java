@@ -1,7 +1,7 @@
 public class Table {
 
     double height; 
-    Circle tableCircle = new Circle(3.0);
+    //Circle tableCircle = new Circle(3.0);
     Table(){
         height = 4.0; // default height of table
     }

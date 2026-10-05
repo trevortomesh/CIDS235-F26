@@ -5,15 +5,16 @@ public class Main {
         System.out.println(Circle.getNumberOfObjects());
          Circle circle1 = new Circle();
          Circle circle2 = new Circle(34.0);
+         printCircle(circle2);
          //System.out.println(circle2.numberOfObjects);
          //Circle.numberOfObjects = 1000;
         // Circle circle2 = new Circle(5);
 
         //System.out.println(circle1.getArea());
         //System.out.println(circle1.numberOfObjects);
-        System.out.println(Circle.getNumberOfObjects());
-        circle1.setRadius(100);
-        System.out.println(circle1.getRadius()); 
+       //System.out.println(Circle.getNumberOfObjects());
+        //circle1.setRadius(100);
+        //System.out.println(circle1.getRadius()); 
         // System.out.println(Circle.getNumberOfObjects());
 
 
@@ -132,5 +133,11 @@ public class Main {
         // System.out.println(cat5Name + " : Age: " + cat5Age + " Weight: " + cat5Weight);
 
 
+    }
+
+    public static void printCircle(Circle c){
+        System.out.println("The area of the circle of radius " + 
+            c.getRadius() + " is " + c.getArea()
+        );
     }
 }
