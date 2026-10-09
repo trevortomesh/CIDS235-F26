@@ -5,7 +5,15 @@ public class Main {
         System.out.println(Circle.getNumberOfObjects());
          Circle circle1 = new Circle();
          Circle circle2 = new Circle(34.0);
+         circle2.setRadius(5);
+         System.out.println(circle2.getRadius());
          printCircle(circle2);
+         System.out.println(circle2.getRadius());
+
+         int a = 5;
+         add1(a);
+         System.out.println(a);
+
          //System.out.println(circle2.numberOfObjects);
          //Circle.numberOfObjects = 1000;
         // Circle circle2 = new Circle(5);
@@ -136,8 +144,14 @@ public class Main {
     }
 
     public static void printCircle(Circle c){
+        c.setRadius(100);
         System.out.println("The area of the circle of radius " + 
             c.getRadius() + " is " + c.getArea()
         );
+    }
+
+    public static void add1(int a){
+        a = a + 1;
+        System.out.println(a);
     }
 }
