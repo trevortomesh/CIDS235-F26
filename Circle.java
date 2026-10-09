@@ -14,7 +14,7 @@ public class Circle {
     }
 
     public double getArea(){
-        System.out.println("We have " + Circle.numberOfObjects + " circles!");
+        //System.out.println("We have " + Circle.numberOfObjects + " circles!");
         return Math.PI * radius * radius;
     }
 

@@ -1,18 +1,31 @@
 public class Main {
     public static void main(String[] args) {
 
+        Circle[] circleArray = new Circle[10];
 
-        System.out.println(Circle.getNumberOfObjects());
-         Circle circle1 = new Circle();
-         Circle circle2 = new Circle(34.0);
-         circle2.setRadius(5);
-         System.out.println(circle2.getRadius());
-         printCircle(circle2);
-         System.out.println(circle2.getRadius());
+        for(int i = 0; i < circleArray.length; i++){
+            circleArray[i] = new Circle();
+            System.out.println(circleArray[i] + " " + circleArray[i].getArea());
+        }
 
-         int a = 5;
-         add1(a);
-         System.out.println(a);
+        
+
+        // Circle myCircle = new Circle(1);
+        // int n = 10;
+        // printAreas(myCircle, n);
+        // System.out.println("\n" + "Radius is " + myCircle.getRadius());
+        // System.out.println("n is " + n );
+        // System.out.println(Circle.getNumberOfObjects());
+        //  Circle circle1 = new Circle();
+        //  Circle circle2 = new Circle(34.0);
+        //  circle2.setRadius(5);
+        //  System.out.println(circle2.getRadius());
+        //  printCircle(circle2);
+        //  System.out.println(circle2.getRadius());
+
+        //  int a = 5;
+        //  add1(a);
+        //  System.out.println(a);
 
          //System.out.println(circle2.numberOfObjects);
          //Circle.numberOfObjects = 1000;
@@ -144,7 +157,7 @@ public class Main {
     }
 
     public static void printCircle(Circle c){
-        c.setRadius(100);
+        //c.setRadius(100);
         System.out.println("The area of the circle of radius " + 
             c.getRadius() + " is " + c.getArea()
         );
@@ -153,5 +166,14 @@ public class Main {
     public static void add1(int a){
         a = a + 1;
         System.out.println(a);
+    }
+
+    public static void printAreas(Circle c, int times){
+        System.out.println("Radius \t\tArea");
+        while(times >=1){
+            System.out.println(c.getRadius() + "\t\t" + c.getArea());
+            c.setRadius(c.getRadius() + 1);
+            times--;
+        }
     }
 }
