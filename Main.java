@@ -1,13 +1,27 @@
 public class Main {
     public static void main(String[] args) {
 
-        Circle[] circleArray = new Circle[10];
+        Circle[] circleArray; //create a circle array
 
-        for(int i = 0; i < circleArray.length; i++){
-            circleArray[i] = new Circle();
-            System.out.println(circleArray[i] + " " + circleArray[i].getArea());
-        }
+        circleArray = createCircleArray();
+        //System.out.println(circleArray[3].getRadius());
+        printCircleArray(circleArray);
 
+        //System.out.println(circleArray[0].getArea());
+
+
+
+        // Circle[] circleArray = new Circle[10];
+        // System.out.println(circleArray);
+
+        // for(int i = 0; i < circleArray.length; i++){
+        //     circleArray[i] = new Circle(i+1);
+        //     System.out.println(circleArray[i] + " " + circleArray[i].getArea());
+        // }
+
+        // Circle c1 = circleArray[0];
+        // c1.setRadius(13.0);
+        // System.out.println(circleArray[0].getRadius());
         
 
         // Circle myCircle = new Circle(1);
@@ -174,6 +188,21 @@ public class Main {
             System.out.println(c.getRadius() + "\t\t" + c.getArea());
             c.setRadius(c.getRadius() + 1);
             times--;
+        }
+    }
+
+    public static Circle[] createCircleArray(){
+        Circle[] circleArray = new Circle[5];
+        for(int i = 0; i < circleArray.length; i++){
+            circleArray[i] = new Circle(Math.random()*100);
+        }
+
+        return circleArray;
+    }
+
+    public static void printCircleArray(Circle[] circleArray){
+        for(int i = 0; i < circleArray.length; i++){
+            System.out.println(circleArray[i] + " r: " + circleArray[i].getRadius());
         }
     }
 }
