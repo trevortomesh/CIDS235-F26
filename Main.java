@@ -1,10 +1,20 @@
 public class Main {
     public static void main(String[] args) {
 
+        Mailbox[] mailBoxes; 
+        mailBoxes = createMailboxArray(300);
+
+        Nintendo myNintendo = new Nintendo();
+
+        mailBoxes[123].deliverMail(myNintendo);
+
+        //Nintendo myNintendo = mailBoxes[123].getMail();
+
         Circle[] circleArray; //create a circle array
 
         circleArray = createCircleArray();
         //System.out.println(circleArray[3].getRadius());
+        System.out.println(circleArray);
         printCircleArray(circleArray);
 
         //System.out.println(circleArray[0].getArea());
@@ -198,6 +208,14 @@ public class Main {
         }
 
         return circleArray;
+    }
+
+    public static Mailbox[] createMailboxArray(int n){
+        Mailbox[] mailboxArray = new Mailbox[n];
+        for(int i = 0; i < mailboxArray.length; i++){
+            mailboxArray[i] = new Mailbox();
+        }
+        return mailboxArray;
     }
 
     public static void printCircleArray(Circle[] circleArray){
