@@ -1,21 +1,29 @@
 public class Main {
     public static void main(String[] args) {
 
-        Mailbox[] mailBoxes; 
-        mailBoxes = createMailboxArray(300);
+        F f1 = new F();
+        F f2 = new F();
+        f1.setI(10);
+        f2.setI(40);
 
-        Nintendo myNintendo = new Nintendo();
+        // F f = new F();
+        // f.p();
 
-        mailBoxes[123].deliverMail(myNintendo);
+        // Mailbox[] mailBoxes; 
+        // mailBoxes = createMailboxArray(300);
 
-        //Nintendo myNintendo = mailBoxes[123].getMail();
+        // Nintendo myNintendo = new Nintendo();
 
-        Circle[] circleArray; //create a circle array
+        // mailBoxes[123].deliverMail(myNintendo);
 
-        circleArray = createCircleArray();
-        //System.out.println(circleArray[3].getRadius());
-        System.out.println(circleArray);
-        printCircleArray(circleArray);
+        // //Nintendo myNintendo = mailBoxes[123].getMail();
+
+        // Circle[] circleArray; //create a circle array
+
+        // circleArray = createCircleArray();
+        // //System.out.println(circleArray[3].getRadius());
+        // System.out.println(circleArray);
+        // printCircleArray(circleArray);
 
         //System.out.println(circleArray[0].getArea());
 
