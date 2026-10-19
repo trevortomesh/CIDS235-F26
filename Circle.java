@@ -4,8 +4,7 @@ public class Circle {
     private static int numberOfObjects = 0;
 
     public Circle(){
-        radius = 1.0;
-        numberOfObjects++;
+       this(1.0);
     }
     
     public Circle(double radius){
