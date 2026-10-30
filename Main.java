@@ -1,12 +1,20 @@
 import java.util.Scanner;
+import java.util.Random;
+
 
 public class Main {
     public static void main(String[] args) {
 
-        F f1 = new F();
-        F f2 = new F();
-        f1.setI(10);
-        f2.setI(40);
+
+        Random rand = new Random();
+
+        for(int i = 0; i < 30; i++){
+            System.out.println(rand.nextBoolean());
+        }
+        // F f1 = new F();
+        // F f2 = new F();
+        // f1.setI(10);
+        // f2.setI(40);
 
         // F f = new F();
         // f.p();
