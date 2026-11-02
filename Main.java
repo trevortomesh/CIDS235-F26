@@ -6,11 +6,14 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Random rand = new Random();
+        Loan loan = new Loan(6.5, 5, 39900);
+        System.out.println(loan.getTotalPayment());
 
-        for(int i = 0; i < 30; i++){
-            System.out.println(rand.nextBoolean());
-        }
+        // Random rand = new Random();
+
+        // for(int i = 0; i < 30; i++){
+        //     System.out.println(rand.nextBoolean());
+        // }
         // F f1 = new F();
         // F f2 = new F();
         // f1.setI(10);
