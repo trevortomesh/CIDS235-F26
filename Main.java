@@ -1,13 +1,68 @@
 import java.util.Scanner;
 import java.util.Random;
+import java.util.ArrayList;
 
 
 public class Main {
     public static void main(String[] args) {
 
+        ArrayList<Song> playlist = new ArrayList<>();
 
-        Loan loan = new Loan(6.5, 5, 39900);
-        System.out.println(loan.getTotalPayment());
+        playlist.add(new Song("Party in the USA", "Miley Cyrus"));
+        playlist.add(new Song("Clair de Lune", "Claude Debussy"));
+        playlist.add(new Song("Jolene", "Dolly Parton"));
+
+        System.out.println("Playlist (" + playlist.size() + " songs):");
+        for(Song s : playlist){
+            System.out.println(" " + s);
+        }
+
+        // ArrayList<Integer> scores = new ArrayList<>();
+        // scores.add(88);
+        // scores.add(94);
+        // scores.add(71);
+        // scores.add(100);
+
+        // int total = 0;
+        // for(int s : scores){
+        //     total += s;
+        // }
+        // System.out.println("Average: " + total / scores.size());
+
+        // scores.remove(2);
+        // System.out.println("After remove(2): " + scores);
+        // scores.remove(Integer.valueOf(94));
+        // System.out.println("scores is now: " + scores);
+
+        // ArrayList<String> roster = new ArrayList<>();
+        // roster.add("Maya");
+        // roster.add("Stevie");
+        // roster.add("Jessi");
+        // roster.add("Blevin");
+
+        // System.out.println("Size: " + roster.size());
+        // System.out.println("Second: " + roster.get(1));
+
+        // roster.set(3, "Devin");
+        // roster.remove(2);
+        // System.out.println(roster.get(2));
+        // System.out.println("Size after drop: " + roster.size());
+        // System.out.println(roster);
+
+        // for(String name : roster){
+        //     System.out.println(" " + name);
+        // }
+
+        // System.out.println("Contains Sofia? " + roster.contains("Sofia"));
+        // String[] roster = new String[3];
+        // roster[0] = "Stevie";
+        // roster[1] = "Maya";
+        // roster[2] = "Jessi";
+        // roster[4] = "Blevin";
+
+
+        // Loan loan = new Loan(6.5, 5, 39900);
+        // System.out.println(loan.getTotalPayment());
 
         // Random rand = new Random();
 
