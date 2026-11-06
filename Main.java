@@ -6,16 +6,33 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Song> playlist = new ArrayList<>();
 
-        playlist.add(new Song("Party in the USA", "Miley Cyrus"));
-        playlist.add(new Song("Clair de Lune", "Claude Debussy"));
-        playlist.add(new Song("Jolene", "Dolly Parton"));
+        Student maya = new Student("Maya");
+        Student liam = new Student ("Liam");
+        Course cids235 = new Course("CIDS 235");
+        Course cids325 = new Course("CIDS 325");
 
-        System.out.println("Playlist (" + playlist.size() + " songs):");
-        for(Song s : playlist){
-            System.out.println(" " + s);
-        }
+        maya.enroll(cids235);
+        maya.enroll(cids325);
+        liam.enroll(cids235);
+
+        maya.printSchedule();
+        System.out.println(cids235);
+
+        maya.drop(cids235);
+        maya.printSchedule();
+        System.out.println(cids235);
+
+        // ArrayList<Song> playlist = new ArrayList<>();
+
+        // playlist.add(new Song("Party in the USA", "Miley Cyrus"));
+        // playlist.add(new Song("Clair de Lune", "Claude Debussy"));
+        // playlist.add(new Song("Jolene", "Dolly Parton"));
+
+        // System.out.println("Playlist (" + playlist.size() + " songs):");
+        // for(Song s : playlist){
+        //     System.out.println(" " + s);
+        // }
 
         // ArrayList<Integer> scores = new ArrayList<>();
         // scores.add(88);
