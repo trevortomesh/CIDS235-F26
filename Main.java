@@ -1,27 +1,49 @@
 import java.util.Scanner;
 import java.util.Random;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class Main {
     public static void main(String[] args) {
 
 
-        Student maya = new Student("Maya");
-        Student liam = new Student ("Liam");
-        Course cids235 = new Course("CIDS 235");
-        Course cids325 = new Course("CIDS 325");
+        Car civic = new Car("Civic", 158);
+        civic.start();
 
-        maya.enroll(cids235);
-        maya.enroll(cids325);
-        liam.enroll(cids235);
+        civic = null;
 
-        maya.printSchedule();
-        System.out.println(cids235);
+        // Professor drt = new Professor("Dr. Trevor Tomesh");
+        // Professor drv = new Professor("Dr. Anthony Varghese");
+        // Professor drh = new Professor("Dr. Jacob Hendricks");
 
-        maya.drop(cids235);
-        maya.printSchedule();
-        System.out.println(cids235);
+        // ArrayList<Professor> deptList = new ArrayList<>();
+        // deptList.add(drv);
+        // deptList.add(drh);
+
+        // Department cids = new Department("Computer, Information and Data Science", deptList);
+        // cids.addProfessor(drt);
+        // cids.printFaculty();
+
+        // cids = null;
+        // //cids.printFaculty();
+
+        // System.out.println("After dept. is gone, still here: " + drt.getName());
+        // Student maya = new Student("Maya");
+        // Student liam = new Student ("Liam");
+        // Course cids235 = new Course("CIDS 235");
+        // Course cids325 = new Course("CIDS 325");
+
+        // maya.enroll(cids235);
+        // maya.enroll(cids325);
+        // liam.enroll(cids235);
+
+        // maya.printSchedule();
+        // System.out.println(cids235);
+
+        // maya.drop(cids235);
+        // maya.printSchedule();
+        // System.out.println(cids235);
 
         // ArrayList<Song> playlist = new ArrayList<>();
 
