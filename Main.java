@@ -8,10 +8,17 @@ public class Main {
     public static void main(String[] args) {
 
 
+        Engine v6 = new Engine(400);
+        v6.start();
+
         Car civic = new Car("Civic", 158);
         civic.start();
 
+        // Engine stolen = civic.getEngine();
+
         civic = null;
+
+        // System.out.println(stolen);
 
         // Professor drt = new Professor("Dr. Trevor Tomesh");
         // Professor drv = new Professor("Dr. Anthony Varghese");
