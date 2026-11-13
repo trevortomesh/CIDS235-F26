@@ -13,6 +13,7 @@ public class Main {
 
         Car civic = new Car("Civic", 158);
         civic.start();
+        Engine civicEngine = civic.getEngine();
 
         // Engine stolen = civic.getEngine();
 

@@ -1,50 +1,61 @@
 import java.util.ArrayList;
 
 public class Student {
-    private int id;
-    private String name;
-    private java.util.Date dateCreated;
-    
-    private ArrayList<Course> courses = new ArrayList<>();
+    private Course[] courseList;
+    private Name name;
 
     Student(String name){
-        this.name = name;
+        this.name = new Name(name);
     }
 
-    void enroll(Course c){
-        courses.add(c);
-        c.addStudent(this);
+    public void addCourse(Course c){
+        //add course here
     }
 
-    void drop(Course c){
-        courses.remove(c);
-        c.removeStudent(this);
-    }
+    // private int id;
+    // private String name;
+    // private java.util.Date dateCreated;
+    
+    // private ArrayList<Course> courses = new ArrayList<>();
 
-    void printSchedule(){
-        System.out.print(name + " is enrolled in: ");
-        for (Course c : courses){
-            System.out.print(c.getCode() + " ");
-            System.out.println();
-        }
-    }
-
-    // public Student(int ssn, String newName){
-    //     id = ssn;
-    //     name = newName;
-    //     dateCreated = new java.util.Date();
+    // Student(String name){
+    //     this.name = name;
     // }
 
-    // public int getId(){
-    //     return id;
+    // void enroll(Course c){
+    //     courses.add(c);
+    //     c.addStudent(this);
     // }
 
-    public String getName(){
-        return name;
-    }
-
-    // public java.util.Date getDateCreated(){
-    //     return dateCreated;
+    // void drop(Course c){
+    //     courses.remove(c);
+    //     c.removeStudent(this);
     // }
+
+    // void printSchedule(){
+    //     System.out.print(name + " is enrolled in: ");
+    //     for (Course c : courses){
+    //         System.out.print(c.getCode() + " ");
+    //         System.out.println();
+    //     }
+    // }
+
+    // // public Student(int ssn, String newName){
+    // //     id = ssn;
+    // //     name = newName;
+    // //     dateCreated = new java.util.Date();
+    // // }
+
+    // // public int getId(){
+    // //     return id;
+    // // }
+
+    // public String getName(){
+    //     return name;
+    // }
+
+    // // public java.util.Date getDateCreated(){
+    // //     return dateCreated;
+    // // }
 
 }
