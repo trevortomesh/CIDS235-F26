@@ -8,16 +8,24 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Engine v6 = new Engine(400);
-        v6.start();
+        Person jack = new Person("Jack");
+        Person mack = new Person("Mack");
 
-        Car civic = new Car("Civic", 158);
-        civic.start();
-        Engine civicEngine = civic.getEngine();
+        jack.setSupervisor(mack);
+        System.out.println(mack.getSupervisor());
+
+        System.out.println(jack.getSupervisor());
+
+        // Engine v6 = new Engine(400);
+        // v6.start();
+
+        // Car civic = new Car("Civic", 158);
+        // civic.start();
+        // Engine civicEngine = civic.getEngine();
 
         // Engine stolen = civic.getEngine();
 
-        civic = null;
+        // civic = null;
 
         // System.out.println(stolen);
 
