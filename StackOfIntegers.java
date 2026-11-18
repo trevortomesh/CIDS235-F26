@@ -24,4 +24,15 @@ public class StackOfIntegers {
         return elements[--size];
     }
 
+    public int peek(){
+        return elements[size-1];
+    }
+
+    public boolean isEmpty(){
+        return size == 0;
+    }
+
+    public int getSize(){
+        return size;
+    }
 }

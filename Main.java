@@ -8,13 +8,28 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Person jack = new Person("Jack");
-        Person mack = new Person("Mack");
+        StackOfIntegers stack = new StackOfIntegers();
 
-        jack.setSupervisor(mack);
-        System.out.println(mack.getSupervisor());
+        // for(int i = 0; i < 10; i++){
+        //     stack.push(i);
+        // }
 
-        System.out.println(jack.getSupervisor());
+        stack.push(7);
+        stack.push(18);
+        System.out.println(stack.getSize());
+        stack.pop();
+        System.out.println(stack.getSize());
+        System.out.println(stack.peek());
+        System.out.println(stack.getSize());
+
+
+        // Person jack = new Person("Jack");
+        // Person mack = new Person("Mack");
+
+        // jack.setSupervisor(mack);
+        // System.out.println(mack.getSupervisor());
+
+        // System.out.println(jack.getSupervisor());
 
         // Engine v6 = new Engine(400);
         // v6.start();
