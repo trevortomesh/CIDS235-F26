@@ -1,26 +1,27 @@
-import java.util.Scanner;
-import java.util.Random;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class Main {
     public static void main(String[] args) {
 
 
-        StackOfIntegers stack = new StackOfIntegers();
+        Circle c1 = new Circle();
+
+        System.out.println(c1.getColor());
+        c1.printCircle();
+
+        // StackOfIntegers stack = new StackOfIntegers();
 
         // for(int i = 0; i < 10; i++){
         //     stack.push(i);
         // }
 
-        stack.push(7);
-        stack.push(18);
-        System.out.println(stack.getSize());
-        stack.pop();
-        System.out.println(stack.getSize());
-        System.out.println(stack.peek());
-        System.out.println(stack.getSize());
+        // stack.push(7);
+        // stack.push(18);
+        // System.out.println(stack.getSize());
+        // stack.pop();
+        // System.out.println(stack.getSize());
+        // System.out.println(stack.peek());
+        // System.out.println(stack.getSize());
 
 
         // Person jack = new Person("Jack");
