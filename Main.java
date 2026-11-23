@@ -4,10 +4,18 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Circle c1 = new Circle();
+        Rectangle rectangle = new Rectangle(2,4);
+        System.out.println("A rectangle " + rectangle.toString());
+        System.out.println("The area is " + rectangle.getArea());
+        System.out.println("The perimeter is " + rectangle.getPerimeter());
 
-        System.out.println(c1.getColor());
-        c1.printCircle();
+         Circle c1 = new Circle();
+
+         System.out.println(c1.getColor());
+         c1.printCircle();
+         System.out.println(c1.getArea());
+         System.out.println(c1.getPerimeter());
+         System.out.println(c1.getColor());
 
         // StackOfIntegers stack = new StackOfIntegers();
 
